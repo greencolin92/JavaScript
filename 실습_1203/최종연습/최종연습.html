@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>멀티캠퍼스</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <style>
+        *{
+            margin: 0; padding: 0; font-family: "조선일보명조";
+        }
+        a{
+            text-decoration: none;
+            /*color: darkslategrey;*/
+            font-weight: bold;
+        }
+        img{border:0;}
+        li{list-style-type: none;}
+
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #main-header{
+            padding: 10px 5px;
+        }
+        #main-header h1{
+            font-size: 20px;
+            line-height: 27px;
+            color:midnightblue;
+        }
+        #main-header ul{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #main-header li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        #main-header li a{color: darkslategrey;}
+        #main-header label{
+            text-align: center;
+            width: 40px;
+            height: 27px;
+            line-height: 27px;
+            color: midnightblue;
+            border: 1px solid darkslategrey;
+            border-radius: 5px;
+            float: right;
+        }
+
+        #main-content{
+            background-color: darkslategrey;
+            padding-left: 40px 15px 30px;
+        }
+        #main-content h1{
+            color: bisque;
+            margin: 20px 0 20px 0;
+            padding-top: 20px;
+        }
+        #main-content p{
+            line-height: 30px;
+            padding-bottom: 20px;
+        }
+        #sub-content{
+            padding-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label>▼</label>
+                <h1>Hanbit</h1>
+            </div>
+            <input checked="checked" type="checkbox" />
+            <nav>
+                <ul>
+                    <li><a href="#">Brand<a></li>
+                    <li><a href="#">Network</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <!-- 본문 -->
+    <div id="main-content">
+        <article class="container">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam neque. Maecenas mauris massa, aliquet ut mollis fermentum, pellentesque et leo. Sed eu pellentesque ex</p>
+        </article>
+    </div>
+    <div id="sub-content">
+        <article>
+            <h1>Make : 액션</h1>
+            <h2>라즈베리 파이와 아두이노로 움직임, 소리, 빛 출력하기</h2>
+            <img src="image_0.jpg" />
+            <p>Mauris imperdiet eros mi, et tempor est porttitor eget. Praesent mattis tellus eu neque pharetra, quis pulvinar sem rhoncus. Morbi maximus justo urna, ac malesuada nulla suscipit in.</p>
+            <br />
+            <h1>나도 피아노 잘 치면 소원이 없겠네</h1>
+            <h2>왕초보를 위한 4주 완성 피아노 연주법</h2>
+            <img src="image_1.jpg" />
+            <p>Nulla ipsum ante, viverra vitae elit non, laoreet sagittis ligula. Quisque tempor nisl augue, eu scelerisque tellus bibendum eu.</p>
+        </article>
+    </div>
+
+
+    <!-- 푸터 -->
+    <div>
+        <footer>
+            <div>©1991-2017 Example. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>

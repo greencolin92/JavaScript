@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Image</title>
+    <style>
+        #bimg{
+            width: 200px; height: 200px;
+        }
+        .simg{
+            width: 50px; height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="dog.jpg" id="bimg">
+        <div>
+            <img src="puppy1.jpg" class="simg">
+            <img src="puppy2.jpg" class="simg">
+            <img src="puppy3.jpg" class="simg">
+        </div>
+    </div>
+
+    <script>
+        /*var bigPic=document.querySelector("#bimg");
+        var smallPic=document.querySelectorAll(".simg");
+
+        function showBig(){
+            var newPic=this.src;
+            bicPic.setAttribute("src", newPic);
+        }
+
+        for(var i=0; i<smallPic.length; i++){
+            smallPic[i].onclick=showBig;
+        }*/
+
+        var bigPic=document.querySelector("#bimg");
+        var smallPic=document.querySelectorAll(".simg")
+
+        function showBig(){
+            var newPic=this.src;
+            bigPic.setAttribute("src", newPic);
+        }
+
+        for(var i=0; i<smallPic.length; i++){
+            smallPic[i].onclick=showBig;
+        }
+    </script>
+</body>
+</html>

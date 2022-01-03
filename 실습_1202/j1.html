@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복습</title>
+</head>
+<body>
+    <script>
+
+        function people(name, age){
+            var name = prompt("이름을 입력하세요.");
+            var age = prompt("나이를 입력하세요. 숫자로 입력");
+
+            document.write(name + "님의 나이는 " + age + "세 입니다. <br>");
+        }
+
+        people();
+
+        function su(a, b){
+            var c=a+b;
+            //document.write(c);
+        }
+
+       // su(5, 7);
+
+
+        function sum(a, b){
+            var c=a+b;
+            return c;
+        }
+
+        var d;
+        d=sum(12, 25);
+        document.write(d);
+
+
+        /* p330 6-2번 */
+        var number = 10;
+
+        alert(++number);
+        alert(++number);
+        alert(++number);
+
+
+        var cm = prompt("센티미터를 입력하세요. 숫자");
+        var inch = cm / 2.54;
+        var feet = inch / 12;
+
+        document.write("당신이 입력한 " + cm + "cm는 " + inch + "inch, " + feet + "feet로 변환됩니다. <br>");
+
+
+        /* p332 17번 */
+        /*  객체방식
+            var book={
+            '이름': "C# 프로그래밍(2판)",
+            '초판 발행': "2019년 12월 10일",
+            '지은이': "윤인성",
+            '펴낸이': "김태헌",
+            '펴낸곳': "한빛아카데미(주)",
+            '책임편집': "변소현",
+            '기획': "김성무",
+            '편집': "김성무",
+            '디자인': "김연정"
+        }*/
+
+        /* 생성함수 방식 */
+        function Book (이름, 초판_발행, 지은이, 펴낸이, 펴낸곳, 책임편집, 기획, 편집, 디자인) {
+            this.이름 = 이름;
+            this.초판_발행 = 초판_발행;
+            this.지은이 = 지은이;
+            this.펴낸이 = 펴낸이;
+            this.펴낸곳 = 펴낸곳;
+            this.책임편집 = 책임편집;
+            this.기획 = 기획;
+            this.편집 = 편집;
+            this.디자인 = 디자인;
+        }
+
+        var book = new Book("C# 프로그래밍(2판)", "2019년 12월 10일", "윤인성", "김태헌", "한빛아카데미(주)", "변소현", "김성무", "김성무", "김연정");
+        
+
+
+    </script>
+</body>
+</html>

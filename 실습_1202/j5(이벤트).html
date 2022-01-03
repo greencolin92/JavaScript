@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+</head>
+<body>
+    <div>
+        <img src="img1.jpg" id="cover">
+    </div>
+    <div>
+        <button id="btn">눌러보세요</button>
+    </div>
+
+    <script>
+        var coverImage=document.querySelector("#cover");
+        coverImage.onclick= function(){   /* 이미지를 눌렀을 때 적용되는 함수 */
+            alert("눌렸어요");
+        }
+
+        coverImage.onmouseover= function(){
+            coverImage.style.border="5px solid brown"
+            
+        }
+
+        var btn=document.querySelector("#btn");
+        btn.onclick= function(){
+            alert("까꿍");
+        }
+
+
+    </script>
+</body>
+</html>

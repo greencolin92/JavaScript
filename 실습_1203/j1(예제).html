@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+    <style>
+        #change{
+            font-size: 16px;
+            color: darkslategrey;
+        }
+        li{list-style-type: none;}
+        .checkli{
+            font-size: 20px;
+            color: grey;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p id="change">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore cum maiores quisquam voluptas eveniet doloribus recusandae omnis, quam dolorem deleniti. Perferendis sequi voluptatem fugit. Temporibus, qui. Sed, doloribus ab eius reiciendis molestias non rem quo laudantium dolor unde nam ducimus voluptatum ipsum fuga veritatis corrupti nostrum dignissimos sit quam. Libero aut animi veniam pariatur commodi ducimus quisquam laboriosam porro nostrum? Id consequuntur officiis dolore sit eveniet sed eos, architecto, recusandae, cum atque ipsa? Doloribus voluptate pariatur exercitationem nemo ducimus neque assumenda, libero tempore iste totam quidem laborum veniam rerum ipsum excepturi ea eius id animi optio debitis ex repellat perferendis?</p>
+
+        <script>
+            // 클릭하면 글자색 파랑, 배경색 회식, 글자크기 커지게, 굵게
+            var change = document.querySelector("#change");  // = getElementById("change")
+            change.onclick = function(){                // textaddEventListener("click", function())
+                change.style.fontSize="20px";
+                change.style.color="blue";
+                change.style.backgroundColor = "#cccccc";
+            }
+        </script>
+
+        <h1>할 일 목록</h1>
+        <ul>
+            <li><span class="checkli">할 일 1</span></li>
+            <li><span class="checkli">할 일 2</span></li>
+            <li><span class="checkli">할 일 3</span></li>
+            <li><span class="checkli">할 일 4</span></li>
+            <li><span class="checkli">할 일 5</span></li>
+        </ul>
+        
+        <script >
+            var buttons = document.querySelectorAll(".checkli");
+                 for(var i=0; i<buttons.length; i++) {
+                     buttons[i].onmouseover=change1;
+                     buttons[i].onmouseout=change2;
+                 }
+               function change1(){
+                this.style.color = "#eeeeee";
+               }
+        
+               function change2(){
+                this.style.color ="blue";
+               }
+        
+            </script>
+
+    </div>
+</body>
+</html>

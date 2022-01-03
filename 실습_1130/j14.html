@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+</head>
+<body>
+    <script>
+        /* for(var i=0; i<10; i++){  /* 카운트변수, 조건식, 증감연산자
+            alert("출력");
+        } */
+
+        /*for(var i=0; i<30; i++){  /* i++은 계산 후에 1을 더해주는 것 -> i=0 결과를 보여주고 난 후 i=1이 됨...반복
+            document.write("*");
+        }*/
+
+        /* var sum=0;
+        for(var i=1; i<6; i++){
+            sum +=i;    //sum = sum+i;
+        }
+        document.write("1부터 5까지 더하면 " + sum); */
+
+        var sum=0;
+        for(var i=1; i<=100; i++){
+            sum +=i;    //sum = sum+i;
+        }
+        document.write("1부터 100까지 더하면 " + sum);
+    </script>
+</body>
+</html>

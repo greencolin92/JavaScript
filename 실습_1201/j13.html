@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 / 객체 생성</title>
+</head>
+<body>
+    <script>
+        var person={
+            name: "홍길동",
+            age: 5,
+            area: "천안"
+        }
+
+        document.write("이름 : " + person.name + "<br>");  /* 변수 불러올 때 변수명.속성값 */
+        document.write("나이 : " + person.age + "세 <br>");
+        document.write("지역 : " + person.area + "<br><br>");
+
+        
+
+        var book={
+            title:"HTML5 웹 프로그래밍 입문 3판",
+            author: "윤인성",
+            price: 26000,
+            publisher: "한빛 아카데미"
+        }
+
+        document.write("책 제목 : " + book.title + "<br>");
+        document.write("저자 : " + book.author + " 지음 <br>");
+        document.write("금액 : " + book.price + "원 <br>");
+        document.write("출판사 : " + book.publisher + "<br>");
+    </script>
+</body>
+</html>

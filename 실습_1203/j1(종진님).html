@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #do-list{
+            font-size: 16px;
+            color: darkslategrey;
+        }
+        li{list-style-type: none;}
+        .checkli{
+            font-size: 20px;
+            color: grey;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <h1>할 일 목록</h1>
+    <ul id="do-list">
+        <li><span class="checkli">할 일 1</span></li>
+        <li><span class="checkli">할 일 2</span></li>
+        <li><span class="checkli">할 일 3</span></li>
+        <li><span class="checkli">할 일 4</span></li>
+        <li><span class="checkli">할 일 5</span></li>
+    </ul>
+   
+   
+   <script> const doLists = document.querySelectorAll('#do-list > li');
+            for (let i=0; i<doLists.length; ++i) {
+                doLists[i].onmouseover = () => {
+                    doLists[i].style.color = '#000';
+                }
+                doLists[i].onmouseout = () => {
+                    doLists[i].style.color = '#ddd';
+                }
+            }
+    </script>
+</body>
+</html>

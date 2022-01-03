@@ -1,0 +1,67 @@
+1. 문서 객체 모델(DOM)
+dom을 통해서 요소를 객체로 변경
+(1) id선택자로 접근하는 함수
+getElementById()
+
+(2) class 값으로 찾아내는 함수
+getElementsByClassName()
+ 2개 이상의 웹 요소 접근 가능
+
+(3) 태그 이름을 찾아내는 함수
+getElementsByTagName()
+
+(4) 다양한 방법으로 찾아내는 함수
+querySelector()  : id는 #
+querySelectorAll()  : class는 .
+
+2. property
+(1) html태그 속성을 가져오면 수정하는 함수
+getAttribute()
+setAttribute()
+
+(2) element.style.property
+
+style.border="값"
+style.textDecoration="값"        //text-decoration
+
+(3) InnerHTML
+
+
+3. 이벤트
+(1) 마우스 이벤트 (on)
+- click
+- dblclick : 더블클릭
+- mousedown
+- mousemove
+- mouseover
+- mouseout
+- mouseup
+
+(2) 키보드 이벤트
+- keypress
+- keydown
+- keyup
+
+(3) 문서 로딩 이벤트
+- about
+- error
+- load
+- resize
+- scroll
+- unload
+
+(4) 폼 이벤트
+- blur
+- change
+- focus
+- reset
+- submit
+
+* 여러 이벤트를 한번에 처리
+addEventListener
+
+
+
+
+
+

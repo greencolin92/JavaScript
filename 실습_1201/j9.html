@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 연습</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            document.write("안녕!" + "<br>");
+        }
+
+        /* hello();
+        hello();
+        hello(); */
+
+        function choice(){
+            var man=prompt("어느 것을 고를 까요? 한남, 중남, 일남, 양남")
+            switch(man){
+                case "한남" : document.write("왜죠?");
+                break;
+                case "중남" : document.write("좌빨 out");
+                break;
+                case "일남" : document.write("혹시 히데 팬?");
+                break;
+                case "양남" : document.write("양남도 남자입니다. 잃으세요.");
+                break;
+                default : document.write("남혐은 스포츠다.");
+            }
+        }
+
+        // choice();
+
+        /* 매개변수 */
+        function myname(name){
+            alert(name+" 안녕하세요!");
+        }
+
+        /* myname("이순신");
+        myname("멀티캠퍼스"); */
+
+
+        function add(a, b){
+            var c = a+b;
+            document.write(c + "<br>");
+        }
+
+        add(3, 5);
+        add(10, 15);
+
+        function imformation(name, address){
+            var name = prompt("당신의 이름은 무엇입니까?");
+            var address = prompt("사는 곳은 어디십니까? 시·군·구까지 입력");
+            document.write(name + "님은 " + address + "에 살고 있습니다." + "<br>");
+        }
+
+        imformation();
+
+        function myFnc(name2, area){
+            document.write(name2 + "입니다.<br>");
+            document.write("사는 지역은" + area + "입니다.");
+        }
+
+        myFnc("홍길동", "서울");
+
+
+
+    </script>
+</body>
+</html>

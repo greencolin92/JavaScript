@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Book(title, author, pages, price){
+            this.title=title;   /* this는 예약어, title 속성의 매개함수 title을 지정 */
+            this.author=author;
+            this.pages=pages;
+            this.price=price;
+        }
+
+        var book1=new Book("자바", "홍길동", 20, 100);
+        document.write(book1.title + "/" + book1.author + "/" + book1.pages + "/" + book1.price + "<br>");
+
+        var book2=new Book("css", "홍길동", 30, 500);
+        document.write(book2.title + "/" + book2.author + "/" + book2.pages + "/" + book2.price + "<br>");
+
+        function Car(model, cor, carPrice, cc){
+            this.model=model;
+            this.cor=cor;
+            this.carPrice=carPrice;
+            this.cc=cc;
+        }
+
+        var car1=new Car("윈스톰", "쉐보레", 3000, 1990);
+        document.write(car1.model + "|" + car1.cor + "|" + car1.carPrice + "만원|" + car1.cc + "cc <br>");
+
+
+        var b1={
+            model : "소나타",
+            year : 2021,
+            company : "현대"
+        };
+
+        var a1="";
+        for(var i in b1){
+            a1 += b1[i] + "<br>";
+        }
+
+        document.write(a1);
+
+
+
+
+
+    </script>
+</body>
+</html>

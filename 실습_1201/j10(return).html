@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 연습</title>
+</head>
+<body>
+    <script>
+
+        /* 서브루틴 : 함수 정의 */
+        function add(a,b){
+            var c= a+b;
+            return c;
+        }
+        /* 메인 루틴 */
+        var value;
+
+        value = add(5, 7);
+        document.write(value + "<br>");
+
+        value = add(10, 7);
+        document.write(value + "<br>");
+
+
+        var num1=5;
+        var num2=10;
+        var result = addNum(num1, num2);
+        document.write(result + "<br>");
+
+        function addNum(n1, n2){
+            var n3=n1*n2
+            return n3;   /* n3 값을 addNum 함수를 불렀던 곳으로 돌려놔줌(위쪽) */
+        }
+
+
+        /* 반지름 30, [원의 넓이 = 반지름 제곱 * 3.14] [원의 둘레 : 반지름*2*3.14] */
+        var radius=30;
+
+        function getArea(r){  /* 원의 넓이 */
+            ar=r*r*3.14;
+            return ar;
+        }
+
+        function getLength(r){  /* 원의 둘레 */
+            al=r*2*3.14;
+            return al;
+        }
+
+        var area = getArea(radius);
+        var length = getLength(radius);
+
+        document.write("반지름 : " + radius + "<br>");
+        document.write("원의 넓이 : " + area + "<br>");
+        document.write("원의 둘레 : " + length + "<br>");
+        
+        
+
+
+
+
+
+
+
+
+
+        /* function circle1(r){
+            var double = r * r * 3.14
+            return double;
+        }
+        function circle2(r){
+            var one = r * 2 * 3.14
+            return one;
+        }
+
+        var r = 30;
+        var result1 = circle1(r);
+        var result2 = circle2(r);
+        document.write("반지름 : " + r + "<br>");
+        document.write("원의 넓이 : " + result1 + "<br>");
+        document.write("원의 둘레 : " + result2 + "<br>"); */
+
+
+    </script>
+</body>
+</html>

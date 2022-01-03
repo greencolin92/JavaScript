@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var days = prompt("오늘은 무슨 요일인가요? 1-일요일 ~ 6-토요일")
+        
+        var day_name;
+
+        switch(days){
+                case "1":
+                day_name="일요일";
+                break;
+                case "2":
+                day_name="월요일";
+                break;
+                case "3":
+                day_name="화요일";
+                break;
+                case "4":
+                day_name="수요일";
+                break;
+                case "5":
+                day_name="목요일";
+                break;
+                case "6":
+                day_name="금요일";
+                break;
+                case "7":
+                day_name="토요일";
+                break;
+                default:
+                day_name="입력 오류";
+        }
+        document.write(day_name + "입니다.")
+    </script>
+    
+</body>
+</html>
